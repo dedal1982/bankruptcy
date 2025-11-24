@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Удаление списков */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Изображения */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Формы */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+/* Кнопки */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Поля формы */
+input,
+textarea,
+select {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
