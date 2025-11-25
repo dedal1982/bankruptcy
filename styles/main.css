@@ -1,7 +1,7 @@
 @import url("./normalize.css");
 
 #root {
-  font-family: "", "", sans-serif;
+  font-family: "Playfair Display", serif;
   font-synthesis: none;
   font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
