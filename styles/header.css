@@ -1,0 +1,60 @@
+:root {
+  --banner-bg: -webkit-linear-gradient(
+    top,
+    rgb(14, 21, 30) 0%,
+    rgb(38, 73, 119) 27%,
+    rgb(39, 76, 125) 65%
+  );
+  --gradient-gold: -webkit-linear-gradient(180deg, #efc89a, #ead9c5) !important;
+  --top-height: 100px;
+  --font-num: "Formular", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: var(--top-height);
+  background: var(--banner-bg);
+}
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+}
+.header__wrapper ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.button-write {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0.8em 1.2em;
+  border-radius: 1em;
+  background: linear-gradient(180deg, #efc89a, #ead9c5);
+  border-color: transparent;
+  color: #000000;
+  transition: all 0.2s ease-in-out;
+}
+.button-write i {
+  display: inline-block;
+  line-height: inherit;
+  margin-right: 0.5em;
+}
+.button-write:hover {
+  filter: brightness(0.9);
+}
+
+.button-call {
+  font-family: var(--font-num);
+}

@@ -1,13 +1,2 @@
-@font-face {
-  font-family: "Playfair Display";
-  src: url("playfairDisplay.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("playfairDisplayBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+@import url("./playfair/playfair.css");
+@import url("./formular/formular.css");

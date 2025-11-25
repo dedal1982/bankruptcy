@@ -1,0 +1,31 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-synthesis: none;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+.container {
+  max-width: 1140px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+:root {
+  --font-num: "Formular", sans-serif;
+}
