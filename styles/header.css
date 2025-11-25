@@ -1,19 +1,21 @@
 :root {
-  --banner-bg: -webkit-linear-gradient(
+  --gradient-blue: -webkit-linear-gradient(
     top,
     rgb(14, 21, 30) 0%,
     rgb(38, 73, 119) 27%,
     rgb(39, 76, 125) 65%
   );
-  --gradient-gold: -webkit-linear-gradient(180deg, #efc89a, #ead9c5) !important;
+  --gradient-gold: -webkit-linear-gradient(180deg, #efc89a, #ead9c5);
   --top-height: 100px;
-  --font-num: "Formular", sans-serif;
+  --font-logo: Georgia, serif;
+  --font-numbers: "Formular", sans-serif;
+  --font-buttons: "Playfair Display", serif;
 }
 
 .header {
   width: 100%;
   height: var(--top-height);
-  background: var(--banner-bg);
+  background: var(--gradient-blue);
 }
 .header__wrapper {
   height: 100%;
@@ -22,7 +24,7 @@
   justify-content: space-between;
 }
 .header__logo {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-logo);
   font-weight: 200;
   font-size: 1.5rem;
   line-height: 1;
@@ -36,7 +38,7 @@
 }
 
 .button-write {
-  font-family: Georgia, serif;
+  font-family: var(--font-buttons);
   font-size: 16px;
   line-height: 1;
   padding: 0.8em 1.2em;
@@ -56,5 +58,13 @@
 }
 
 .button-call {
-  font-family: var(--font-num);
+  font-weight: 700;
+  font-family: var(--font-numbers);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #efc89a;
+  transition: all 0.2s ease-in-out;
+}
+.button-call:hover {
+  color: #0a58ca;
 }
