@@ -15,7 +15,7 @@
   margin: 2rem 0;
 }
 .promo__top h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-Playfair);
   font-weight: 200;
   font-size: clamp(1.4rem, 3.5vw, 2.125rem);
   line-height: clamp(1.75rem, 5.5vw, 2.75rem);

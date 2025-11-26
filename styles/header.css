@@ -6,9 +6,10 @@
     rgba(0, 0, 0, 3),
     rgba(0, 0, 0, 0.5)
   );
-  --font-logo: "Playfair Display", serif;
-  --font-numbers: "Formular", sans-serif;
-  --font-buttons: Georgia, serif;
+  --font-Inter: "Inter", serif;
+  --font-Playfair: "Playfair Display", serif;
+  --font-Formular: "Formular", sans-serif;
+  --font-Georgia: Georgia, serif;
 }
 @media screen and (max-width: 900px) {
   :root {
@@ -29,8 +30,8 @@
   z-index: 10;
 }
 .header__logo {
-  font-family: var(--font-logo);
-  font-weight: 700;
+  font-family: var(--font-Inter);
+  font-weight: 500;
   font-size: clamp(0.875rem, 3.5vw, 1.5rem);
   display: block;
   white-space: nowrap;
@@ -46,7 +47,7 @@
 
 .button-call {
   font-weight: 700;
-  font-family: var(--font-numbers);
+  font-family: var(--font-Formular);
   font-size: clamp(0.875rem, 3vw, 1.1875rem);
   color: #efc89a;
   transition: all 0.2s ease-in-out;
@@ -56,7 +57,7 @@
 }
 
 .button-write {
-  font-family: var(--font-buttons);
+  font-family: var(--font-Georgia);
   font-size: 1rem;
   line-height: 0.8;
   color: #000000;
