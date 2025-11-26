@@ -1,0 +1,11 @@
+:root {
+}
+.promo {
+  background: -webkit-linear-gradient(bottom, #23379a, #09133c);
+  background: linear-gradient(0deg, #23379a, #09133c);
+}
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

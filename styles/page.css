@@ -17,7 +17,11 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  background: var(--gradient-blue);
+}
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .container {
   max-width: 1220px;
