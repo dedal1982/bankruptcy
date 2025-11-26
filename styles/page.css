@@ -21,8 +21,8 @@ html {
   -moz-text-size-adjust: 100%;
   background: -webkit-linear-gradient(
     top,
-    rgb(14, 21, 30) 0% 0%,
-    rgb(38, 73, 119) 27%,
+    rgb(14, 21, 30) 0%,
+    rgb(38, 73, 119) 10%,
     rgb(39, 76, 125) 65%
   );
 }

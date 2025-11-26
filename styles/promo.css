@@ -6,14 +6,13 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .promo__top {
   display: flex;
   flex-direction: column;
   color: #efc89a;
   text-align: center;
-  margin: 10px 0;
+  margin: 2rem 0;
 }
 .promo__top h1 {
   font-family: "Playfair Display", serif;
@@ -22,4 +21,7 @@
   line-height: clamp(1.75rem, 5.5vw, 2.75rem);
 }
 @media screen and (max-width: 900px) {
+  .promo__top {
+    margin: 1rem 0;
+  }
 }
