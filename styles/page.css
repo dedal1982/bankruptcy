@@ -1,3 +1,8 @@
+:root {
+  --font-logo: "Playfair Display", serif;
+  --font-numbers: "Formular", sans-serif;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -12,6 +17,7 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  background: var(--gradient-blue);
 }
 .container {
   max-width: 1220px;
@@ -20,13 +26,15 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.gold-txt {
+  color: transparent;
+  background-image: linear-gradient(180deg, #ead9c5, #efc89a, #ead9c5);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-:root {
-  --font-logo: "Playfair Display", serif;
-  --font-numbers: "Formular", sans-serif;
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
