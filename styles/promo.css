@@ -12,7 +12,7 @@
   flex-direction: column;
   color: #efc89a;
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 .promo__top h1 {
   font-family: var(--font-Playfair);
@@ -24,4 +24,27 @@
   .promo__top {
     margin: 10px 0;
   }
+}
+.promo__inner {
+  display: flex;
+}
+
+.promo__list {
+  list-style: none;
+}
+.promo__list li {
+  font-family: var(--font-Playfair);
+  font-weight: 100;
+  font-size: clamp(0.75rem, 3.5vw, 1.125rem);
+  line-height: 27px;
+  color: #fff;
+}
+.promo__list li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(216, 176, 131);
+  margin: auto 20px;
 }
