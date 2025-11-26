@@ -95,7 +95,7 @@
   }
   .header__nav {
     flex-direction: column-reverse;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   .header__nav-cell {
     width: 100%;
