@@ -168,8 +168,15 @@ input[type="radio"] {
   padding: 0.5rem;
   box-sizing: border-box;
 }
-.promo__profiles img {
+.promo__profiles-img {
   width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.promo__profiles-img img {
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
