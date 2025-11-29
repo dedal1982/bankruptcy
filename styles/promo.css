@@ -21,19 +21,22 @@
   font-size: clamp(1.375rem, 3.5vw, 2.125rem);
   line-height: clamp(1.75rem, 5.5vw, 2.75rem);
 }
-@media screen and (max-width: 900px) {
-}
 .promo__inner {
   display: flex;
 }
-
+.promo__quiz {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .promo__list {
   list-style: none;
 }
 .promo__list li {
   font-family: "Playfair Display", serif;
   font-weight: 100;
-  font-size: clamp(1.1rem, 3.5vw, 1.125rem);
+  font-size: 1.125rem;
   line-height: 27px;
   color: #fff;
   padding: 0.5rem 0;
@@ -46,4 +49,46 @@
   border-radius: 50%;
   background: rgb(216, 176, 131);
   margin: auto 20px;
+}
+.arrow-left-5,
+.arrow-right-5,
+.arrow-top-5,
+.arrow-bottom-5 {
+  margin: 20px 8px;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  fill: #fff;
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+.arrow-left-5:hover,
+.arrow-right-5:hover,
+.arrow-top-5:hover,
+.arrow-bottom-5:hover {
+  fill: #efc89a;
+  transform: scale(1.2);
+}
+.arrow-left-5:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+.arrow-right-5:hover {
+  transform: rotate(270deg) scale(1.2);
+}
+.arrow-top-5:hover {
+  transform: rotate(180deg) scale(1.2);
+}
+@media screen and (max-width: 900px) {
+  .promo__inner {
+    flex-direction: column;
+  }
+  .promo__quiz {
+    flex-basis: 100%;
+  }
+  .promo__list {
+    align-self: flex-start;
+  }
+  .promo__list li {
+    font-size: 0.8rem;
+    padding: 0;
+  }
 }
