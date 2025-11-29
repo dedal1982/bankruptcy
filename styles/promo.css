@@ -16,7 +16,7 @@
   margin: 3rem 0;
 }
 .promo__top h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: clamp(1.375rem, 3.5vw, 2.125rem);
   line-height: clamp(1.75rem, 5.5vw, 2.75rem);
@@ -25,10 +25,12 @@
 }
 .promo__inner {
   display: flex;
+  justify-content: space-between;
 }
 .promo__quiz {
-  flex-basis: 50%;
+  width: 50%;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
 }
@@ -52,7 +54,7 @@
   height: 16px;
   border-radius: 50%;
   background: rgb(216, 176, 131);
-  margin-right: 20px;
+  margin: 0 1.3rem;
 }
 .arrow-left-5,
 .arrow-right-5,
@@ -86,7 +88,7 @@
     flex-direction: column;
   }
   .promo__quiz {
-    flex-basis: 100%;
+    width: 100%;
   }
   .promo__list li {
     font-size: 0.8rem;
@@ -149,4 +151,32 @@ input[type="radio"] {
   .promo__inner {
     margin: 0;
   }
+}
+/*promo__profiles*/
+.promo__profiles {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.promo__profiles-item {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.3rem;
+  border-bottom: 1px solid #d1b06b;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.promo__profiles img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+.promo__profiles h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
 }
