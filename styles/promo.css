@@ -138,6 +138,15 @@ input[type="radio"] {
   border-bottom: 1px solid #d1b06b;
   padding: 0.5rem;
   box-sizing: border-box;
+  position: relative;
+}
+.decor-icon {
+  width: 95px;
+  height: 44px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .promo__profiles-img {
   width: 200px;
