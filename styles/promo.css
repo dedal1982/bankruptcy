@@ -26,6 +26,7 @@
 .promo__inner {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .promo__quiz {
   width: 50%;

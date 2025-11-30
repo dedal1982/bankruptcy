@@ -1,0 +1,41 @@
+.gallery {
+  background: linear-gradient(rgb(14, 21, 30), rgb(39, 76, 125));
+}
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.gallery__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  gap: 10px;
+}
+.gallery__top img {
+  width: 25px;
+  height: 25px;
+}
+.gallery__top h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .gallery__top {
+    gap: 5px;
+  }
+  .gallery__top h5 {
+    font-size: 0.9rem;
+  }
+  .gallery__top img {
+    width: 15px;
+    height: 15px;
+  }
+}
