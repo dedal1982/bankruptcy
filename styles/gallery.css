@@ -17,9 +17,13 @@
   cursor: pointer;
   gap: 10px;
 }
-.gallery__top img {
+.gallery-icon {
   width: 25px;
   height: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-icon.active {
+  transform: rotate(180deg);
 }
 .gallery__top h2 {
   font-family: "Playfair Display", serif;
@@ -31,8 +35,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1.5rem 2rem;
+  padding: 0 1.5rem;
   box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.gallery__inner.active {
+  height: auto;
+  margin: 1.5rem auto 2rem;
 }
 .gallery__grid {
   display: grid;
@@ -82,6 +93,7 @@
   box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2);
 }
 .form-modal {
+  max-width: 528px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,7 +125,6 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.8;
-  min-height: 2.8rem;
   border-radius: 0.3rem;
   border-color: #e5e5e5;
   padding: 0 0.8rem;
@@ -124,6 +135,46 @@
 input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
+}
+.form-conditions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.form-conditions input {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 0.2rem;
+}
+.form-conditions p,
+.form-conditions a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.form-conditions a {
+  color: #0d6efd;
+}
+.form-modal button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  margin: 2.5rem auto;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+  text-transform: none;
+  border-radius: 0.5em;
+  padding: 1em 1.8em;
+  box-sizing: border-box;
+  box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2);
+  background: #1d4694;
+  border-color: transparent;
+  color: #ffffff;
 }
 @media screen and (max-width: 1199px) {
   .gallery__grid {
@@ -139,10 +190,10 @@ textarea:focus::placeholder {
   .gallery__top {
     gap: 5px;
   }
-  .gallery__top h5 {
+  .gallery__top h2 {
     font-size: 0.9rem;
   }
-  .gallery__top img {
+  .gallery-icon {
     width: 15px;
     height: 15px;
   }

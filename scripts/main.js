@@ -1,4 +1,5 @@
 // Функция для форматирования номера телефона
+
 function formatPhoneNumber(input) {
   let numbers = input.value.replace(/\D/g, "");
 
@@ -39,3 +40,16 @@ phoneInputs.forEach((input) => {
     formatPhoneNumber(this);
   });
 });
+
+// Функция открытия галереи
+
+const galleryBtn = document.querySelector(".gallery__top");
+const galleryIconArrow = galleryBtn.querySelector("img");
+const galleryInner = document.querySelector(".gallery__inner");
+
+if (galleryBtn) {
+  galleryBtn.addEventListener("click", () => {
+    galleryIconArrow.classList.toggle("active");
+    galleryInner.classList.toggle("active");
+  });
+}

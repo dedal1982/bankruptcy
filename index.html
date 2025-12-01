@@ -125,12 +125,16 @@
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
           <div class="gallery__wrapper container">
-            <div class="gallery__top" type="button">
-              <img src="./icons/arrow-top.png" alt="стрелка" />
+            <a href="#gallery" class="gallery__top" type="button">
+              <img
+                class="gallery-icon"
+                src="./icons/arrow-top.png"
+                alt="стрелка"
+              />
               <h2>Более 5500 списанных долгов моих Клиентов</h2>
-            </div>
+            </a>
             <div class="gallery__inner">
               <div class="gallery__grid">
                 <!--item-->
@@ -173,11 +177,27 @@
               <button class="gallery__button" type="button">
                 Показать ещё
               </button>
+
               <form class="form-modal" action="">
                 <h3>Получите бесплатную консультацию</h3>
                 <p>Заполните форму, и я Вам перезвоню</p>
                 <input type="text" placeholder="Ваше имя" />
                 <input type="tel" placeholder="+7 (___) ___-__-__" />
+                <div class="form-conditions">
+                  <input type="checkbox" checked="checked" />
+                  <p>
+                    Нажимая “Отправить”, я принимаю условия
+                    <a href="#" target="_blank">Публичной оферты</a>,
+                    подтверждаю ознакомление с
+                    <a href="#" target="_blank"
+                      >Политикой персональных данных</a
+                    >
+                    и даю согласие на обработку моих персональных данных на
+                    основании
+                    <a href="#" target="_blank">Согласия</a>
+                  </p>
+                </div>
+                <button type="submit">Отправить заявку</button>
               </form>
             </div>
           </div>
