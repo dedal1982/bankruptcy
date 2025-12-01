@@ -136,44 +136,7 @@
               <h2>Более 5500 списанных долгов моих Клиентов</h2>
             </a>
             <div class="gallery__inner">
-              <div class="gallery__grid">
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-                <!--item-->
-                <div class="gallery__grid-item">
-                  <h4>Дело № 000-0000/2024</h4>
-                  <p>Регион: Тверская область Дата завершения: 18.06.2024</p>
-                  <p>Итог: завершено освобождением гражданина от долгов</p>
-                </div>
-              </div>
+              <div class="gallery__grid"></div>
               <button class="gallery__button" type="button">
                 Показать ещё
               </button>
@@ -215,6 +178,14 @@
         </div>
       </footer>
     </div>
+    <template id="galleryGrid">
+      <div class="gallery__grid-item">
+        <h4 class="case-number">Дело №</h4>
+        <p class="case-region">Регион:</p>
+        <p class="case-result">Итог:</p>
+      </div>
+    </template>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/init-cards.js"></script>
   </body>
 </html>
