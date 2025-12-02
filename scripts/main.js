@@ -1,5 +1,4 @@
 // Функция для форматирования номера телефона
-
 function formatPhoneNumber(input) {
   let numbers = input.value.replace(/\D/g, "");
 
@@ -42,7 +41,6 @@ phoneInputs.forEach((input) => {
 });
 
 // Функция открытия галереи
-
 const galleryBtn = document.querySelector(".gallery__top");
 const galleryIconArrow = galleryBtn.querySelector("img");
 const galleryInner = document.querySelector(".gallery__inner");
@@ -54,10 +52,25 @@ if (galleryBtn) {
   });
 }
 
-//
+//Активация кнопки согласия и отправки
 const checkbox = document.getElementById("agreement");
 const submitButton = document.getElementById("submitBtn");
 
 checkbox.addEventListener("change", () => {
   submitButton.disabled = !checkbox.checked;
+});
+
+// Получаем все контейнеры по id
+const quiz = document.getElementById("quiz");
+const quizTwo = document.getElementById("quizTwo");
+const quizThree = document.getElementById("quizThree");
+
+quiz.addEventListener("click", () => {
+  quiz.classList.add("inactive");
+  quizTwo.classList.remove("inactive");
+});
+
+quizTwo.addEventListener("click", () => {
+  quizTwo.classList.add("inactive");
+  quizThree.classList.remove("inactive");
 });

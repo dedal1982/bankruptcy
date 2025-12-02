@@ -199,3 +199,6 @@ input[type="radio"] {
     width: 150px;
   }
 }
+.inactive {
+  display: none;
+}
