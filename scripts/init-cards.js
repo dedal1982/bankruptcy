@@ -14,6 +14,11 @@ const initGallery = [
     region: "Region™",
     result: "Result",
   },
+  {
+    number: "4",
+    region: "Region™",
+    result: "Result",
+  },
 ];
 
 //инициализация карточек каталог
@@ -23,9 +28,9 @@ const elements = document.querySelector(".gallery__grid");
 
 function createCard(item) {
   const htmlElement = itemTemplate.cloneNode(true);
-  const caseNumber = htmlElement.querySelector(".case-number");
-  const caseRegion = htmlElement.querySelector(".case-region");
-  const caseResult = htmlElement.querySelector(".case-result");
+  const caseNumber = htmlElement.querySelector(".case-number span");
+  const caseRegion = htmlElement.querySelector(".case-region span");
+  const caseResult = htmlElement.querySelector(".case-result span");
 
   // Проверяем наличие значения поля в объекте item перед присваиванием его элементу
   if (item.number) {

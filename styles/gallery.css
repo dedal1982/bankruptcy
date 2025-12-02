@@ -32,11 +32,10 @@
   color: #fff;
 }
 .gallery__inner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
   height: 0;
   overflow: hidden;
   transition: all 1s ease-in-out;
@@ -46,9 +45,12 @@
   margin: 1.5rem auto 2rem;
 }
 .gallery__grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   gap: 2.5em;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 .gallery__grid-item {
   max-width: 100%;
@@ -76,21 +78,6 @@
 }
 .gallery__grid-item p:last-child {
   margin: 0;
-}
-.gallery__button {
-  width: fit-content;
-  margin: 2.5rem auto 0;
-  font-family: Georgia, serif;
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 200;
-  letter-spacing: 0em;
-  border-radius: 0em;
-  padding: 1.2em 2.2em;
-  background: linear-gradient(170deg, #efc89a, #ead9c5);
-  border-color: transparent;
-  color: #000000;
-  box-shadow: 0 0em 0em rgba(0, 0, 0, 0.2);
 }
 .form-modal {
   max-width: 528px;
@@ -184,6 +171,14 @@ textarea:focus::placeholder {
 @media screen and (max-width: 899px) {
   .gallery__grid {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
+    gap: 1.2rem;
+  }
+  .form-modal {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+  }
+  .form-modal h3 {
+    font-size: 1.125rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -205,19 +200,12 @@ textarea:focus::placeholder {
     font-size: 0.9;
     line-height: 1.3;
   }
-  .gallery__button {
-    font-size: 0.9rem;
+  .gallery__inner.active {
+    margin: 0 auto 2rem;
   }
 }
 @media screen and (max-width: 599px) {
-  .gallery__inner {
-    padding-top: 0.6rem;
-    padding-bottom: 1rem 14px;
-  }
   .gallery__grid {
     grid-template-columns: repeat(1, minmax(auto, 1fr));
-  }
-  .gallery__button {
-    margin: 1.5rem auto 0;
   }
 }

@@ -21,3 +21,15 @@
   line-height: 1.4;
   color: #777777;
 }
+@media (max-width: 1024px) {
+  .footer__info {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__info {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
