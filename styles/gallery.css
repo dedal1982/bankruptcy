@@ -162,6 +162,17 @@ textarea:focus::placeholder {
   background: #1d4694;
   border-color: transparent;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.form-modal button:hover {
+  background: #144ab5;
+}
+.form-modal button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.form-modal button:disabled:hover {
+  background: #1d4694;
 }
 @media screen and (max-width: 1199px) {
   .gallery__grid {

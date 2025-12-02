@@ -53,3 +53,11 @@ if (galleryBtn) {
     galleryInner.classList.toggle("active");
   });
 }
+
+//
+const checkbox = document.getElementById("agreement");
+const submitButton = document.getElementById("submitBtn");
+
+checkbox.addEventListener("change", () => {
+  submitButton.disabled = !checkbox.checked;
+});
