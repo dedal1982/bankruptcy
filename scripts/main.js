@@ -56,21 +56,27 @@ if (galleryBtn) {
 const checkbox = document.getElementById("agreement");
 const submitButton = document.getElementById("submitBtn");
 
-checkbox.addEventListener("change", () => {
-  submitButton.disabled = !checkbox.checked;
-});
+if (checkbox) {
+  checkbox.addEventListener("change", () => {
+    submitButton.disabled = !checkbox.checked;
+  });
+}
 
 // Получаем все контейнеры по id
 const quiz = document.getElementById("quiz");
 const quizTwo = document.getElementById("quizTwo");
 const quizThree = document.getElementById("quizThree");
 
-quiz.addEventListener("click", () => {
-  quiz.classList.add("inactive");
-  quizTwo.classList.remove("inactive");
-});
+if (quiz) {
+  quiz.addEventListener("click", () => {
+    quiz.classList.add("inactive");
+    quizTwo.classList.remove("inactive");
+  });
+}
 
-quizTwo.addEventListener("click", () => {
-  quizTwo.classList.add("inactive");
-  quizThree.classList.remove("inactive");
-});
+if (quizTwo) {
+  quizTwo.addEventListener("click", () => {
+    quizTwo.classList.add("inactive");
+    quizThree.classList.remove("inactive");
+  });
+}
