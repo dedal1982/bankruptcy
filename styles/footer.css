@@ -21,6 +21,14 @@
   line-height: 1.4;
   color: #777777;
 }
+.footer__politics {
+  background: rgb(209, 209, 209);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 1024px) {
   .footer__info {
     padding-top: 2.5rem;
