@@ -63,20 +63,25 @@ if (checkbox) {
 }
 
 // Получаем все контейнеры по id
-const quiz = document.getElementById("quiz");
-const quizTwo = document.getElementById("quizTwo");
-const quizThree = document.getElementById("quizThree");
+const quiz = document.querySelectorAll(".quiz li input");
+const quizTwo = document.querySelectorAll("quizTwo li input");
+const quizThree = document.querySelectorAll("quizThree li input");
+console.log(quiz);
 
 if (quiz) {
-  quiz.addEventListener("click", () => {
-    quiz.classList.add("inactive");
-    quizTwo.classList.remove("inactive");
+  quiz.forEach((item) => {
+    item.addEventListener("click", () => {
+      quiz.classList.add("inactive");
+      quizTwo.classList.remove("inactive");
+    });
   });
 }
 
 if (quizTwo) {
-  quizTwo.addEventListener("click", () => {
-    quizTwo.classList.add("inactive");
-    quizThree.classList.remove("inactive");
+  quizTwo.forEach((item) => {
+    item.addEventListener("click", () => {
+      quizTwo.classList.add("inactive");
+      quizThree.classList.remove("inactive");
+    });
   });
 }
