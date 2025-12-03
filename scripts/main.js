@@ -63,13 +63,16 @@ if (checkbox) {
 }
 
 // Получаем все контейнеры по id
-const quiz = document.querySelectorAll(".quiz li input");
-const quizTwo = document.querySelectorAll("quizTwo li input");
-const quizThree = document.querySelectorAll("quizThree li input");
-console.log(quiz);
+const quiz = document.getElementById("quiz");
+const quizItems = quiz.querySelectorAll("ul li input");
+const quizTwo = document.getElementById("quizTwo");
+const quizItemsTwo = quizTwo.querySelectorAll("ul li input");
+const quizThree = document.getElementById("quizThree");
+const quizItemsThree = quizThree.querySelectorAll("ul li input");
+const quizFour = document.getElementById("quizFour");
 
 if (quiz) {
-  quiz.forEach((item) => {
+  quizItems.forEach((item) => {
     item.addEventListener("click", () => {
       quiz.classList.add("inactive");
       quizTwo.classList.remove("inactive");
@@ -78,10 +81,19 @@ if (quiz) {
 }
 
 if (quizTwo) {
-  quizTwo.forEach((item) => {
+  quizItemsTwo.forEach((item) => {
     item.addEventListener("click", () => {
       quizTwo.classList.add("inactive");
       quizThree.classList.remove("inactive");
+    });
+  });
+}
+
+if (quizThree) {
+  quizItemsThree.forEach((item) => {
+    item.addEventListener("click", () => {
+      quizThree.classList.add("inactive");
+      quizFour.classList.remove("inactive");
     });
   });
 }
