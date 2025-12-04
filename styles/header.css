@@ -47,6 +47,7 @@
 .header__nav-items {
   display: flex;
   flex-direction: column;
+  gap: 1px;
 }
 .button-call {
   font-weight: 500;
