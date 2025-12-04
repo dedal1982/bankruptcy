@@ -44,7 +44,10 @@
   gap: 1.5rem;
   white-space: nowrap;
 }
-
+.header__nav-items {
+  display: flex;
+  flex-direction: column;
+}
 .button-call {
   font-weight: 700;
   font-family: var(--font-Formular);
