@@ -63,7 +63,7 @@
   color: #1a1a1a;
 }
 .gallery__grid-item h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5;
@@ -204,6 +204,7 @@ textarea:focus::placeholder {
     height: 15px;
   }
   .gallery__grid-item h4 {
+    font-weight: 700;
     font-size: 0.9;
     line-height: 1.3;
   }
