@@ -49,16 +49,17 @@ if (galleryBtn) {
   galleryBtn.addEventListener("click", () => {
     galleryIconArrow.classList.toggle("active");
     galleryInner.classList.toggle("active");
+    window.scrollTo({ top: 0 });
   });
 }
 
 //Активация кнопки согласия и отправки
-const checkbox = document.getElementById("agreement");
+const checkboxBtn = document.getElementById("agreement");
 const submitButton = document.getElementById("submitBtn");
 
-if (checkbox) {
-  checkbox.addEventListener("change", () => {
-    submitButton.disabled = !checkbox.checked;
+if (checkboxBtn) {
+  checkboxBtn.addEventListener("change", () => {
+    submitButton.disabled = !checkboxBtn.checked;
   });
 }
 
@@ -97,3 +98,38 @@ if (quizThree) {
     });
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".form-modal");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      fetch("/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          alert(response.message);
+          galleryIconArrow.classList.toggle("active");
+          galleryInner.classList.toggle("active");
+          window.scrollTo({ top: 0 });
+          form.reset();
+        })
+        .catch((error) => {
+          alert("Произошла ошибка при отправке формы");
+          console.error(error);
+        });
+    });
+  }
+});

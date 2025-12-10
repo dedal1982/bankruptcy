@@ -65,7 +65,7 @@
               <a class="button-call" href="tel:89216718828">+7(921)671-88-28</a>
               <a class="button-call" href="tel:89058730453">+7(905)873-04-53</a>
             </div>
-            <a class="button-write" href="https://t.me/" target="_blank"
+            <a class="button-write" href="https://t.me/Banex29" target="_blank"
               ><i class="fab fa-telegram"></i><span>Написать</span></a
             >
           </div>
@@ -224,8 +224,11 @@
                   <h4 class="quiz-header">
                     "Оставьте заявку на бесплатную консультацию"
                   </h4>
-                  <a class="quiz-button" type="button" href=""
-                    >Отправить заявку</a
+                  <a
+                    class="quiz-button"
+                    type="button"
+                    href="https://t.me/Banex29"
+                    >Оставить заявку</a
                   >
                 </div>
               </div>
@@ -278,11 +281,21 @@
               <div class="gallery__inner">
                 <div class="gallery__grid"></div>
 
-                <form class="form-modal" action="">
+                <form class="form-modal" action="/submit-form" method="POST">
                   <h3>Получите бесплатную консультацию</h3>
                   <p>Заполните форму, и я Вам перезвоню</p>
-                  <input type="text" placeholder="Ваше имя" required />
-                  <input type="tel" placeholder="+7 (___) ___-__-__" required />
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                  <input
+                    name="tel"
+                    type="tel"
+                    placeholder="+7 (___) ___-__-__"
+                    required
+                  />
                   <div class="form-conditions">
                     <input type="checkbox" id="agreement" />
                     <p>
